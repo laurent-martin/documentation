@@ -67,8 +67,14 @@ wget -O - https://get.hacs.xyz | bash -
 
 The same as [Home Assistant OS](#home-assistant-os), but you can also run the script directly on the host OS.
 
-1. Open a terminal
-1. Run the HACS download script
+1. Open a terminal as root
+2. Ensure that base tools are installed
+
+```bash
+apt-get install wget unzip
+```
+
+3. Run the HACS download script
 
 ```bash
 wget -O - https://get.hacs.xyz | bash -
